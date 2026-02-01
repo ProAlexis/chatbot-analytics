@@ -97,7 +97,7 @@ chatbot-analytics/
 
 ```bash
 # 1. Cloner le repository
-git clone https://github.com/TON_USERNAME/chatbot-analytics.git
+git clone https://github.com/ProAlexis/chatbot-analytics.git
 cd chatbot-analytics
 
 # 2. Configurer GCP
