@@ -1,4 +1,4 @@
-# 📊 Chatbot Analytics Dashboard
+# Chatbot Analytics Dashboard
 
 > Projet portfolio démontrant une pipeline data complète : de l'ingestion à la visualisation.
 
@@ -6,16 +6,17 @@
 ![Looker Studio](https://img.shields.io/badge/Looker%20Studio-4285F4?style=flat&logo=google&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 
-## 🎯 Objectif
+## Objectif
 
 Construire un dashboard d'analyse de conversations chatbot pour comprendre :
+
 - Les **catégories** de demandes les plus fréquentes
 - Les **intentions** utilisateur détectées
 - La **qualité** des messages (formulations, fautes, politesse)
 
 Ce projet simule le travail d'un Data Analyst sur un assistant virtuel de service client.
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
@@ -25,7 +26,7 @@ Ce projet simule le travail d'un Data Analyst sur un assistant virtuel de servic
 └─────────────────┘     └─────────────────┘     └─────────────────┘
 ```
 
-## 📁 Structure du projet
+## Structure du projet
 
 ```
 chatbot-analytics/
@@ -39,37 +40,39 @@ chatbot-analytics/
     └── insights.md           # Insights et conclusions
 ```
 
-## 🔧 Technologies utilisées
+## Technologies utilisées
 
-| Technologie | Usage |
-|-------------|-------|
-| **Google Cloud Platform** | Infrastructure cloud |
-| **BigQuery** | Data warehouse serverless |
-| **Looker Studio** | Visualisation et dashboard |
-| **Python + Kaggle API** | Récupération des données |
-| **SQL** | Analyse et transformation |
+| Technologie               | Usage                      |
+| ------------------------- | -------------------------- |
+| **Google Cloud Platform** | Infrastructure cloud       |
+| **BigQuery**              | Data warehouse serverless  |
+| **Looker Studio**         | Visualisation et dashboard |
+| **Python + Kaggle API**   | Récupération des données   |
+| **SQL**                   | Analyse et transformation  |
 
-## 📊 Dataset
+## Dataset
 
 **Source** : [Bitext - Customer Service Training Dataset](https://www.kaggle.com/datasets/bitext/training-dataset-for-chatbotsvirtual-assistants)
 
-| Champ | Description |
-|-------|-------------|
-| `flags` | Indicateurs de formulation (B=Base, I=Informal, M=Misspell, P=Polite) |
-| `utterance` | Message de l'utilisateur |
-| `category` | Catégorie générale (ACCOUNT, ORDER, REFUND...) |
-| `intent` | Intention spécifique (cancel_order, track_refund...) |
+| Champ       | Description                                                           |
+| ----------- | --------------------------------------------------------------------- |
+| `flags`     | Indicateurs de formulation (B=Base, I=Informal, M=Misspell, P=Polite) |
+| `utterance` | Message de l'utilisateur                                              |
+| `category`  | Catégorie générale (ACCOUNT, ORDER, REFUND...)                        |
+| `intent`    | Intention spécifique (cancel_order, track_refund...)                  |
 
 **Volume** : 8 175 messages répartis en 11 catégories et 27 intentions.
 
-## 📈 Insights clés
+## Insights clés
 
 ### Répartition des demandes
+
 - **ACCOUNT** (22%) : Gestion de compte (création, suppression, mot de passe)
 - **ORDER** (15%) : Commandes (suivi, annulation, modification)
 - **REFUND** (11%) : Remboursements
 
 ### Top 5 des intentions
+
 1. `get_invoice` - 324 occurrences
 2. `check_invoice` - 324 occurrences
 3. `payment_issue` - 323 occurrences
@@ -77,13 +80,15 @@ chatbot-analytics/
 5. `track_refund` - 308 occurrences
 
 ### Qualité des messages
+
 - **29%** des messages sont en formulation de base (B)
 - **13%** contiennent du langage informel (BI)
 - **10%** contiennent des fautes d'orthographe (BM)
 
-## 🚀 Reproduire le projet
+## Reproduire le projet
 
 ### Prérequis
+
 - Compte Google Cloud Platform
 - Python 3.x
 - Kaggle API configurée
@@ -116,16 +121,16 @@ bq load \
   data/Bitext_Sample_Customer_Service_Training_Dataset/Training/Bitext_Sample_Customer_Service_Training_Dataset.csv
 ```
 
-## 🔗 Liens
+## Liens
 
-- **Dashboard Looker Studio** : [Voir le dashboard](LIEN_A_AJOUTER)
+- **Dashboard Looker Studio** : [Voir le dashboard](https://lookerstudio.google.com/reporting/3f7e2333-002d-488a-be35-86216968c27c)
 - **Dataset Kaggle** : [Bitext Customer Service](https://www.kaggle.com/datasets/bitext/training-dataset-for-chatbotsvirtual-assistants)
 
 ## 👤 Auteur
 
 **Alexis de Sousa**  
-Data Analyst | Passionné par l'analyse conversationnelle et les chatbots
+Data Analyst | Passionné par l'analyse de données
 
 ---
 
-*Projet réalisé dans le cadre d'un portfolio data analytics.*
+Projet réalisé dans le cadre d'un portfolio data analytics.
